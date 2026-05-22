@@ -60,7 +60,7 @@ spec:
   argoCD:
     namespace: argocd
     sso:
-      host: https://argocd-{REPLACE_VCLUSTER_NAME}.{REPLACE_BASE_DOMAIN}
+      host: https://argocd-rmweir-vmetal-demo.us.demo.dev
       assignedRoles:
         - role:admin
   namespacePattern:

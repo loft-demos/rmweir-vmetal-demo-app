@@ -1,0 +1,4 @@
+repo=rmweir-vmetal-demo-app
+branch=main
+source_commit=df90983a0b515745ab753399146e407ca89f38ee
+completed_at=2026-05-22T22:49:24Z
