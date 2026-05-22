@@ -4,7 +4,7 @@
 
 replicaCount: 1
 image:
-  repository: {REPLACE_APP_IMAGE_REPOSITORY}
+  repository: {REPLACE_APP_IMAGE_REPOSITORY: ''}
   pullPolicy: IfNotPresent
   # use Chart appVersion if not set as value
   tag: ""
@@ -16,7 +16,7 @@ nameOverride: ""
 fullnameOverride: ""
 deployment:
   # used to specify commit sha in CI job
-  commit: dea33d41347f5d6e0bfb83ab32730b33f9af9c51
+  commit: 9047c611e2ec834b940efb05d75d64eb6e627a98
 serviceAccount:
   # Specifies whether a service account should be created
   create: true
