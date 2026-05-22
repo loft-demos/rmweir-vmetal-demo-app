@@ -1,0 +1,3 @@
+repo: rmweir-vmetal-demo-app
+branch: main
+purpose: trigger the generated repo replace-text workflow
