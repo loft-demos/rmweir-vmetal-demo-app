@@ -10,9 +10,7 @@ spec:
       namespace: default
     deploy:
       multus:
-        enabled: true
-        helmValues: |
-          cniBinDir: /home/kubernetes/bin
+        enabled: false
       metal3:
         enabled: true
       dhcp:
