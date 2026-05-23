@@ -11,6 +11,8 @@ spec:
     deploy:
       multus:
         enabled: true
+        helmValues: |
+          cniBinDir: /home/kubernetes/bin
       metal3:
         enabled: true
       dhcp:

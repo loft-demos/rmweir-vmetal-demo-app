@@ -48,12 +48,12 @@ spec:
         - name: CNI_VERSION
           value: "v1.9.0"
         - name: CNI_INSTALL_DIR
-          value: "/host/opt/cni/bin"
+          value: "/host/home/kubernetes/bin"
         securityContext:
           privileged: true
         volumeMounts:
         - name: cni-bin
-          mountPath: /host/opt/cni/bin
+          mountPath: /host/home/kubernetes/bin
       containers:
       - name: pause
         image: registry.k8s.io/pause:3.9
@@ -64,5 +64,5 @@ spec:
       volumes:
       - name: cni-bin
         hostPath:
-          path: /opt/cni/bin
+          path: /home/kubernetes/bin
           type: DirectoryOrCreate
