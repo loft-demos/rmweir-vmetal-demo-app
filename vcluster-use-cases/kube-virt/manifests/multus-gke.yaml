@@ -106,6 +106,7 @@ metadata:
   namespace: default
   annotations:
     argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/sync-options: Replace=true
   labels:
     tier: node
     app: multus
