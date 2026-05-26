@@ -102,19 +102,18 @@ data:
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
-  name: kube-multus-ds
+  name: kube-multus-gke
   namespace: default
   annotations:
     argocd.argoproj.io/sync-wave: "2"
-    argocd.argoproj.io/sync-options: Replace=true
   labels:
     tier: node
     app: multus
-    name: multus
+    name: multus-gke
 spec:
   selector:
     matchLabels:
-      name: multus
+      name: multus-gke
   updateStrategy:
     type: RollingUpdate
     rollingUpdate:
@@ -124,7 +123,7 @@ spec:
       labels:
         tier: node
         app: multus
-        name: multus
+        name: multus-gke
     spec:
       hostNetwork: true
       hostPID: true
