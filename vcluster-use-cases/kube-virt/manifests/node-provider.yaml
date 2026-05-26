@@ -2,6 +2,8 @@ apiVersion: storage.loft.sh/v1
 kind: NodeProvider
 metadata:
   name: metal3
+  labels:
+    reconcile: "1"
 spec:
   displayName: "Metal3 Bare Metal Hosts"
   metal3:
