@@ -146,7 +146,6 @@ spec:
               cp /usr/src/multus-cni/bin/passthru /host/home/kubernetes/bin/passthru
           resources:
             requests:
-              cpu: 10m
               memory: 15Mi
           securityContext:
             privileged: true
@@ -167,7 +166,6 @@ spec:
                   fieldPath: spec.nodeName
           resources:
             requests:
-              cpu: 5m
               memory: 50Mi
             limits:
               cpu: 100m
