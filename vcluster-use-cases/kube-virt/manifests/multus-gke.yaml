@@ -105,7 +105,7 @@ metadata:
   name: kube-multus-gke
   namespace: default
   annotations:
-    argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/sync-wave: "5"
   labels:
     tier: node
     app: multus
