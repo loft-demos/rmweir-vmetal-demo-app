@@ -17,7 +17,7 @@ spec:
       enabled: true
     helmRelease:
       chart:
-        version: 0.33.1
+        version: 0.35.2
       values: |-
         controlPlane:
           backingStore:
